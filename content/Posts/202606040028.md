@@ -1,0 +1,6 @@
+---
+tags:
+  - post
+links:
+posted:
+---
