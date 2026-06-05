@@ -4,9 +4,9 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  analytics: null
+  analytics:
     provider: plausible
-  locale: sv-SE
+  locale: en-GB
   baseUrl: nurobot-lab.github.io/mgl-vaerldsbygge
   ignorePatterns:
     - private
