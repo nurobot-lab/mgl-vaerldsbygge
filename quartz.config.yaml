@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: MGL Vaerldsbygge
+  pageTitle: Quartz 5
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-GB
+  locale: en-US
   baseUrl: nurobot-lab.github.io/mgl-vaerldsbygge
   ignorePatterns:
     - private
@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Rubik Puddles
-      body: Inclusive Sans
+      header: Schibsted Grotesk
+      body: Source Sans Pro
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#134213" # page background
-        lightgray: "#0c290c" # borders
-        gray: "#646464" # graph links, heavier borders
-        darkgray: "#ccd5d4" # body text
-        dark: "#05b669" # header text and icons
-        secondary: "#05b669" # link colour, current graph node
-        tertiary: "#f07826" # hover states and visited graph nodes
-        highlight: rgba(5, 182, 105, 0.15)  #internal link background, highlightes text, highlighted lines of code
-        textHighlight: "#f07826" # markdown highlights text background
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -160,35 +160,6 @@ plugins:
     layout:
       position: right
       priority: 10
-    options:
-    localGraph:
-      drag: true
-      zoom: true
-      depth: 1
-      scale: 1.1
-      repelForce: 0.5
-      centerForce: 0.3
-      linkDistance: 30
-      fontSize: 0.6
-      opacityScale: 1
-      removeTags: []
-      showTags: true
-      focusOnHover: false
-      enableRadial: false
-    globalGraph:
-      drag: true
-      zoom: true
-      depth: -1
-      scale: 0.9
-      repelForce: 0.5
-      centerForce: 0.3
-      linkDistance: 30
-      fontSize: 0.6
-      opacityScale: 1
-      removeTags: []
-      showTags: true
-      focusOnHover: true
-      enableRadial: true
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -198,7 +169,7 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: hideWhenEmpty
+    enabled: true
     layout:
       position: right
       priority: 50
@@ -236,11 +207,6 @@ plugins:
       group: toolbar
   - source: github:quartz-community/breadcrumbs
     enabled: true
-    options:
-      spacerSymbol: "❯"
-      rootName: Home
-      resolveFrontmatterTittle: true
-      showCurrentPage:true
     layout:
       position: beforeBody
       priority: 5
@@ -290,10 +256,6 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: github:Requiae/quartz-leaflet-bases-plugin
-    enabled: true
-    options:
-      enableCopyTool: false
   - source:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
