@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#134213" # page background
+        lightgray: "#0c290c" # borders
+        gray: "#646464" # graph links, heavier borders
+        darkgray: "#ccd5d4" # body text
+        dark: "#05b669" # header text and icons
+        secondary: "#05b669" # link colour, current graph node
+        tertiary: "#f07826" # hover states and visited graph nodes
+        highlight: rgba(5, 182, 105, 0.15)  #internal link background, highlightes text, highlighted lines of code
+        textHighlight: "#f07826" # markdown highlights text background
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
