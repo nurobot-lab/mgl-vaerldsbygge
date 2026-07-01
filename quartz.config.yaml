@@ -16,7 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Rubik Glitch
+      title: Rubik Glitch
+      header: Inclusive Sans
       body: Inclusive Sans
       code: Cascadia Mono
     colors:
@@ -31,15 +32,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0c290c" # page background
+        lightgray: "#134213" # borders
+        gray: "#7a807f" # graph links, heavier borders
+        darkgray: "#ccd5d4" # body text
+        dark: "#05b669" # header text and icons
+        secondary: "#05b669" # link colour, current graph node
+        tertiary: "#f07826" # hover states and visited graph nodes
+        highlight: rgba(5, 182, 105, 0.15) # internal link background, highlighted text, highlighted lines of code
+        textHighlight: "#05b669" # markdown highlighted text background
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -194,7 +195,7 @@ plugins:
       position: left
       priority: 10
   - source: github:quartz-community/darkmode
-    enabled: false
+    enabled: true
     layout:
       position: left
       priority: 30
@@ -260,9 +261,9 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
-      theme: "80s-neon"
+      theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:

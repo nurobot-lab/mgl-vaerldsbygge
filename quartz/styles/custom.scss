@@ -1,4 +1,13 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
-@use "themes";
+
+/* Colour scheme */
+:root {
+    --xenomorph-skin: #0c290c;
+    --terminal-green: #134213;
+    --seegson-green: #05b669;
+    --acid-blood: #f07826;
+    --hypersleep-white: #ccd5d4;
+    --synthetic-skin: #7a807f;
+}
