@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Rubik Puddles
+      body: Inclusive Sans
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -198,7 +198,7 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: true
+    enabled: hideWhenEmpty
     layout:
       position: right
       priority: 50
@@ -236,6 +236,11 @@ plugins:
       group: toolbar
   - source: github:quartz-community/breadcrumbs
     enabled: true
+    options:
+      spacerSymbol: "❯"
+      rootName: Home
+      resolveFrontmatterTittle: true
+      showCurrentPage:true
     layout:
       position: beforeBody
       priority: 5
