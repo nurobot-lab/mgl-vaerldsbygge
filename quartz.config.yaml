@@ -194,7 +194,7 @@ plugins:
       position: left
       priority: 10
   - source: github:quartz-community/darkmode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 30
@@ -262,7 +262,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: default
+      theme: "80s-neon"
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
