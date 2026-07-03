@@ -1,0 +1,12 @@
+filters: file.folder == "Entries"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - links
+      - posted
+      - file.backlinks
+    columnSize:
+      note.links: 357
+      note.posted: 194
